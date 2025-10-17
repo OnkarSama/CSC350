@@ -1,0 +1,128 @@
+/* General Layout */
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: #000; /* black background */
+    color: #b19cd9; /* pastel purple text */
+    font-family: "Source Code Pro", serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: #111;
+    color: #b19cd9;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #1a1a1a;
+    row-gap: 1rem;
+}
+
+.nav-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+nav a {
+    color: #b19cd9;
+    padding: 1rem;
+    text-decoration: none;
+    animation: ease-in-out;
+    transition: background 1s;
+}
+
+nav a:hover {
+    background: #333;
+    border-radius: 10px;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 1; /* pushes footer down */
+    max-width: 1500px;
+    margin: auto;
+    padding: 1rem;
+
+}
+
+/* Post layout */
+.post {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #333;
+    border-radius: 100px 20px 100px 20px;
+    margin: 1.5rem 0;
+    padding: 2rem;
+    background: #111;
+    overflow: hidden;
+    gap: 1rem;
+}
+
+
+/* Alternate every other post */
+.post:nth-child(even) {
+    flex-direction: row-reverse;
+    border-radius: 20px 100px 20px 100px;
+}
+
+/* Sub-containers */
+.post-image, .post-text {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background: #6e3e8c;
+    border-radius: 10px;
+}
+
+
+.post-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+}
+
+/* Text box */
+.post-text {
+    background: #111;
+    flex-direction: column;
+    text-align: left;
+}
+
+.post-text h2 {
+    margin-top: 0;
+    color: #b19cd9;
+}
+
+#latex{
+    object-fit: fill;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #1a1a1a;
+    color: #b19cd9;
+    margin-top: auto; /* pushes footer down */
+}

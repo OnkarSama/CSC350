@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Onkar's Blog</title>
+    <link rel="icon" href="assets/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <h1>Onkar's Blog</h1>
+        <p>Personal projects and thoughts</p>
+    </header>
+
+    <nav>
+        <div class="nav-content">
+            <a href="index.html">Home</a>
+            <a href="blog.html">More Posts</a>
+            <a href="about.html">About</a>
+        </div>
+    </nav>
+
+
+    <main class="container">
+        <!-- Post 1 -->
+        <div class="post">
+            <img src="assets/images/website.png" alt="Website Project" class="float-left">
+            <h2>Building My First Website</h2>
+            <p>I started off by building my first website from scratch, experimenting with plain HTML, CSS, and JavaScript. It was a big milestone in learning web development and taught me the importance of structured, maintainable code.</p>
+            <p>After getting comfortable with the basics, I wanted to streamline my workflow and build more dynamic projects. That’s when I switched to <strong>Next.js</strong> for its server-side rendering and routing features, and <strong>Tailwind CSS</strong> for faster, utility-first styling. The combination allowed me to build cleaner, more scalable websites without spending hours rewriting boilerplate code.</p>
+            <p>This transition completely changed the way I approach projects—now I focus more on design and functionality instead of wrestling with repetitive setup.</p>
+        </div>
+
+        <!-- Post 2 -->
+        <div class="post">
+            <img src="assets/images/research.png" alt="Research with LaTeX & TikZ" class="float-right">
+            <h2>ML Research</h2>
+            <p>For my research, I explored visualizing concepts like Information Gain, decision trees, and k-NN using LaTeX and TikZ. This gave me a deeper appreciation for how diagrams can simplify complex algorithms and make abstract math feel more intuitive.</p>
+            <p>One of the key directions I pursued was using Information Gain from decision trees not just for visualization, but as a way to improve k-NN. By ranking features based on their Information Gain, I applied weighting and selective filtering to emphasize the attributes that contributed the most to classification accuracy. This effectively reduced noise and guided k-NN to focus on the most informative parts of the dataset.</p>
+            <p>Through experiments, I was able to show that this hybrid approach outperformed a baseline k-NN as well as feature selection techniques based on Genetic Algorithms (GA). While GA searches stochastically for optimal subsets, my Information Gain–driven method provided a more deterministic and interpretable way of enhancing k-NN. The result was a consistent boost in accuracy along with greater transparency in how features were prioritized.</p>
+            <p>This project taught me that combining the strengths of different algorithms — in this case, the interpretability of decision trees with the flexibility of k-NN — can lead to better performance than using each in isolation. It also highlighted the importance of feature selection as a critical step in machine learning pipelines.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Onkar's Blog</p>
+    </footer>
+</div>
+</body>
+</html>

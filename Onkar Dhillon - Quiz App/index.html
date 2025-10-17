@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript Quiz App</title>
+        <style>
+            body {font-family: Arial, sans-serif; margin: 20px;}
+            form { margin-bottom: 20px; }
+            fieldset { margin-bottom: 15px; padding: 10px; border-radius: 8px; }
+            legend { font-weight: bold; }
+            button { padding: 8px 14px; margin-top: 10px; }
+            #result {font-weight: bold; margin-top: 15px; color: darkgreen; }
+        </style>
+    </head>
+    <body>
+        <h1>JavaScript Quiz</h1>
+        <form id="quizForm">
+            <fieldset>
+                <legend>1. Which keyword defines a block-scoped variable?</legend>
+                <label><input type="radio" name="q1" value="var"> var</label>
+                <label><input type="radio" name="q1" value="let"> let</label>
+                <label><input type="radio" name="q1" value="const"> const</label>
+            </fieldset> 
+
+            <fieldset>
+                <legend>2. Which data type represents true/false values?</legend>
+                <label><input type="radio" name="q2" value="String">String</label>
+                <label><input type="radio" name="q2" value="Boolean">Boolean</label>
+                <label><input type="radio" name="q2" value="Number">Number</label>
+            </fieldset> 
+
+            <fieldset>
+                <legend>3. Which loop is guaranteed to run at least once?</legend>
+                <label><input type="radio" name="q3" value="for">for</label>
+                <label><input type="radio" name="q3" value="while">while</label>
+                <label><input type="radio" name="q3" value="doWhile">doWhile</label>
+            </fieldset>
+
+            <!-- New questions beyond this point -->
+
+            <fieldset>
+                <legend>4. Which is not a primitive datatype in Java?</legend>
+                <label><input type="radio" name="q4" value="Int">Int</label>
+                <label><input type="radio" name="q4" value="Char">Char</label>
+                <label><input type="radio" name="q4" value="String">String</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>5. What language primarily uses pointers?</legend>
+                <label><input type="radio" name="q5" value="C++">C++</label>
+                <label><input type="radio" name="q5" value="Java">Java</label>
+                <label><input type="radio" name="q5" value="Python">Python</label>
+            </fieldset>
+
+            <button type="button" onclick="submitQuiz()">Submit</button>
+        </form>
+
+        <div id="result"></div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
